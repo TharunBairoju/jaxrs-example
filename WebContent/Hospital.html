@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="app/styles/task2.css" />
+	<style type="text/css">
+		.bodyStyle 
+		{
+			color: darkblue;
+		}
+	</style>
+	<title>Welcome to Groovy</title>
+	<script type="text/javascript">				
+		function isNumber()
+			{
+				if(!(event.keyCode>=48 && event.keyCode<=57))
+					{
+						alert("Input digits (0-9)")
+						return event.returnValue=null;	
+					}				
+			}
+	</script>	
+</head>
+<body class="bodyStyle">
+<center><marquee><h1><font color = blue>Welcome to Groovy</h1></marquee></center>
+<form action="http://localhost:8089/RestFullServerApp/NewUser.jsp">
+		<table align = center width=50% bgcolor=lightblue>	
+		<caption>Register with Groovy</caption>
+			<tr>
+				<td> Hospital Name
+					<td><input type= text size="20" placeholder="Enter First Name" name=fname maxlength="10"></td>
+				</td>	
+			</tr>
+			<tr>
+				<td>Bachelor of Medicine or Surgery
+					<select>
+						<option value="1">MBBS </option>
+						<option value="2">BMBS</option>
+						<option value="3">MBChB</option>
+						<option value="3">MBBCh</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Doctor of Medicine or Osteopathic Medicine
+					<select>
+						<option value="1">MD </option>
+						<option value="2">Dr.MuD</option>
+						<option value="3">Dr.Med</option>
+						<option value="3">DO</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Specialization
+					<select>
+						<option value="1">Anaesthesiology </option>
+						<option value="2">Pathology</option>
+						<option value="3">Cardiology</option>
+						<option value="3">Cardiothoracic surgery</option>
+						<option value="1">Gastroenterology </option>
+						<option value="2">General practice</option>
+						<option value="3">Obstetrics and gynaecology</option>
+						<option value="3">Neurology</option>
+						<option value="1">Paediatrics </option>
+						<option value="2">Orthopaedics</option>
+						<option value="3">Radiation Oncology</option>
+						<option value="3">General surgery</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Reg_Num</td>
+				<td><input type="text" id= "Reg_Num" name=Reg onkeypress="isNumber()"></td>	
+			</tr>
+			<tr>
+				<td>PhoneNumber</td>
+				<td><input type="text" id= "PhoneNumber" name=phone onkeypress="isNumber()"></td>	
+			</tr>
+			<tr>
+				<td> Email ID
+					<td><input type= text size="50" placeholder="Enter emailId" name = emailId></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> User Name
+					<td><input type= text size="50" placeholder="Enter User Name" name = un></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> Password
+					<td><input type= password size="50" placeholder="Enter Password" name = password></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> Door Number
+					<td><input type= text size="50" placeholder="Enter Door Number" name = dno></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> Address Line 1
+					<td><input type= text size="50" placeholder="Enter Address Line 1" name = al1></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> Address Line 2
+					<td><input type= text size="50" placeholder="Enter Address Line 2" name = al2></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> Location
+					<td><input type= text size="50" placeholder="Enter Location" name = loc></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> City
+					<td><input type= text size="50" placeholder="Enter City" name = city></td>
+				</td>	
+			</tr>
+			<tr>
+				<td> State 
+					<td><input type= text size="20" placeholder="Enter State" ></td>
+				</td>	
+			</tr>	
+			<tr>
+				<td> Country 
+					<td><input type= text size="20" placeholder="Enter Country" ></td>
+				</td>	
+			</tr>	
+			<tr>
+				<td> PinCode 
+					<td><input type= text size="20" placeholder="Enter PinCode" ></td>
+				</td>	
+			</tr>
+			<tr>
+				<td><input type= submit value = Submit></td>
+				<td><input type= reset value = Cancel></td>	
+			</tr>
+		</table>
+		<a href="http://localhost:8089/RestFullServerApp/home.html">Back to Home</a><br>
+	</form>
+	
+</body>
+</html>

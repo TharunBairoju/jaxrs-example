@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Groovy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  function imageClick(url) {
+	    window.location = "http://localhost:8089/MyProjectServerApp/home.html";
+	}
+</script>
+</head>
+<body>
+<section>
+<div>
+
+</div>
+<div class="container has-text-right">
+                
+    <figure >
+           <img src="./images/logo.png" align="left" >
+            <img src="./images/home.png" height="128" width="128" align="right" onclick="imageClick()"/>
+    </figure>
+</div>
+</section>
+<div class="container has-text-centered">
+	<div class="columns justify-content-center">
+<!-- 		<div class="column is-5-fullhd is-6-desktop">
+			<div class="has-padding-x-3"> -->
+			 <div class="has-text-centered">				 
+
+				<div class="field-group" style= "width:50%" align="center">
+					<label for="text" >User Name:</label>
+					 <input type="text" class="form-control" id="uid" placeholder="Enter user name" name="usere name"  style="width:50%">
+				</div>
+				<div class="field-group"  style="width:50%" align="center">
+					 <label for="text" style="align:left">Password:</label>
+					 <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password"  style="width:50%">
+				</div>
+				<div class="checkbox"  style="width:50%" align="center">
+					 <label><input type="checkbox"> Remember me</label>
+				</div>
+				<div >
+					 <input type="submit" class="btn btn-primary" value="Submit" >
+					 <input type= "reset" class="btn btn-danger" value="Cancel" >
+				</div>
+<!-- 			</div>
+		  </div>	 -->	  		
+		</div>
+	</div>
+</div>
+	
+
+</body>
+</html>
