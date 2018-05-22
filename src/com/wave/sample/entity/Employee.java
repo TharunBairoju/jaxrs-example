@@ -1,0 +1,39 @@
+package com.wave.sample.entity;
+
+public class Employee {
+
+	private int empid;
+	private String ename;
+	private double salary;
+
+	public Employee(int id, String name, double sal) {
+		this.empid = id;
+		this.ename = name;
+		this.salary = sal;
+	}
+
+	public int getEmpid() {
+		return empid;
+	}
+
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+
+	public String getEname() {
+		return ename;
+	}
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+}
