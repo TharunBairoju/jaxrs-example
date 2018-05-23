@@ -14,6 +14,7 @@ import com.wave.sample.entity.Booking;
 
 
 
+
 public class BookingDAO 
 {
 	Configuration config=null;
